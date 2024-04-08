@@ -11,14 +11,13 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: linear-gradient(to right, #fc5c7d, #6a82fb);;
     color: #333;
     line-height: 1.6;
 }
 
 p
 {
-    font-size: 24px;
+    font-size: 27px;
 }
 
 .edu
@@ -34,7 +33,8 @@ p
     justify-content: center;
     gap: 25px;
 }
-.container {
+.container 
+{
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -52,6 +52,7 @@ p
 .flex-container
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -59,7 +60,7 @@ p
 .card-img-top
 {
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .card-img-toppro
@@ -68,8 +69,9 @@ p
     height: 50%;
     align-self: center;
 }
+
 header {
-    background: linear-gradient(to right, #fc5c7d, #6a82fb);;
+    background: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
     color: #fff;
     padding: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 1.5);
@@ -77,19 +79,31 @@ header {
 
 header h1 {
     font-size: 75px;
-    font-weight: bold;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav ul {
+.card-title
+{
+    background-image: linear-gradient(to right, #870000, #190a05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul 
+{
     list-style: none;
 }
 
 nav ul li 
 {
-    font-size: 20px;
+    font-size: 30px;
     display: inline-block;
-    margin-left: 30px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -102,37 +116,70 @@ nav ul li a:hover {
     color: #ffc107;
 }
 
-section {
+section 
+{
     padding: 50px 0;
 }
 
-h3{
+h3
+{
     font-size: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h2 {
-    margin-bottom: 30px;
+h2 
+{
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;margin-bottom: 30px;
     text-align: center;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     color: #343a40;
 }
 
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.card-title
+{
+    font-size: 30px;
+    font-weight: bolder;
 }
 
-.about-content img {
-    width: 200px;
-    height: 200px;
+.card
+{
+    border: 1px solid;
+    width: fit-content;
+}
+
+
+.card-img-toppro
+{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
+.connect
+{
+    display: grid;
+    
+    grid-template-rows: 200px minmax(400px, fr);
+    grid-template-columns: 200px minmax(400px, 0fr);
+    align-items: center;
+}
+
+.connect h3
+{
+    background-image: linear-gradient(to right, #870000, #190a05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.connect a
+{
+    font-size: 35px;
+}
 .portfolio-item 
 {
     display: flex;
@@ -158,6 +205,13 @@ h2 {
     transform: translateY(-5px);
 }
 
+.takeme
+{
+    padding: 10px;
+    background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+    border: none;
+    border-radius: 10px;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -200,6 +254,14 @@ form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+.arrow
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
 }
 
 form input,
