@@ -13,6 +13,7 @@ body {
     font-style: normal;
     color: #333;
     line-height: 1.6;
+    cursor: default;
 }
 
 p
@@ -43,11 +44,17 @@ p
 .skills
 {
     display: flex;
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex-direction: row;
     gap: 25px;
     text-align: center;
 }
+
+@media (max-width: 800px) {
+    .skills {
+      flex-direction: column;
+        align-items: center;
+    }
+  }
 
 .flex-container
 {
@@ -93,6 +100,8 @@ header h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
 
 nav ul 
 {
@@ -237,8 +246,8 @@ h2
 }
 
 .overlay .btn {
-    padding: 10px 20px;
-    background-color: #ffc107;
+    padding: 10px 10px;
+    background-color: whitesmoke;
     color: #343a40;
     text-decoration: none;
     border: none;
@@ -247,7 +256,7 @@ h2
 }
 
 .overlay .btn:hover {
-    background-color: #ffca28;
+    background-color: lightskyblue;
 }
 
 form label {
